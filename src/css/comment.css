@@ -122,7 +122,6 @@ body{
 }
 
 #nav li a{
-	/*height: 33px;*/
     line-height: 33px;
     padding: 0px 13px;
     display: inline-block;
@@ -131,8 +130,6 @@ body{
     color: #000;
     white-space: nowrap;
 	padding: 0 13px;
-	/*border: 1px solid #DDDDDD;*/
-	margin-right: 15px;
 }
 #nav li a:hover{
 	background: #aa1800;

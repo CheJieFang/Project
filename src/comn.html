@@ -7,10 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/comment.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" href="css/Slide.css" />
-		<script src="js/startMove.js"></script>
-		<script src="js/Slide.js"></script>
-		<script src="js/jquery-1.11.0.min.js"></script>
 	</head>
 
 	<body>
@@ -275,84 +271,9 @@
 			</div>
 
 		</div>
-		<!--含轮播图部分-->
+
 		<div id="banner" class="container">
-			<div id="lunbo">
-				<div class="reg_riginf fr">
-					<div class="slide_login">
-						<p class="sli_login">
-							<img style="margin-right:13px ;" src="img/ecd_yhtx.jpg"/>
-							<span class="slide_texb fr">Hi!欢迎来到多商！</span>
-							<span class="slide_texc">您还未登录哦~</span>
-								
-						</p>
-						<p class="slide-btn">
-							<a style="" href="html/login.html"><img class="key" src="img/key.jpg"/>登陆</a>
-							<a href="html/regin.html"><img class="pen" src="img/pen.jpg"/>注册</a>
-							
-						</p>
-					</div>
-					<!--右侧小选项卡-->
-					<div class="hd">
-						<ul class="fl">
-							<li class="active1">公告</li>
-							<li class="">保障</li>
-						</ul>
-					</div>
-					<div class="bd">
-						<ul class="ulbox1" style="display: block;">
-							<li><p><a href="">淘宝活动实战：美妆网店如何日销千单</a></p></li>
-							<li><p><a>“一天之钻”9、9包邮</a></p></li>
-							<li><p>“多商助理”订购说明</p></li>
-							<li><p>淘宝数据包上传教程</p></li>
-							<li><p>详情页成列宝贝教程</p></li>
-						</ul>
-						<ul class="ulbox2" style="display:none">
-							<li><p><a href="">常见问题</a></p></li>
-							<li><p><a>售后服务</a></p></li>
-							<li><p>违规处理</p></li>
-							<li><p>支付安全保障</p></li>
-							<li><p>隐私说明</p></li>
-						</ul>
-					</div>
-					<div class="slide_con_c">
-						<ul>
-							<li class="fl ytj"><span>源头价</span></li>
-							<li class="fl hhy"><span>好货源</span></li>
-							<li class="fl aq"><span>有保障</span></li>
-						</ul>
-					</div>
-					
-					<div class="slide_con_d">
-						<p style="height: 34px;line-height: 34px;font-weight: bold;">分销商代销流程</p>
-						<ul>
-							<li><b>1</b>注册多商会员</li>
-							<li><b>2</b>选中合适产品</li>
-							<li><b>3</b>一键上架到淘宝店</li>
-							<li><b>4</b>成功代销</li>
-						</ul>
-					</div>
-				</div>
-				<div class="lbdiv fr">
-					<div style="display: inline-block;" id="div1" class="slide fl"></div>
-					<div style="display: inline-block;" class="imgr1 fr"><img src="img/lbr1.jpg"/></div>
-				</div>
-				<div style="display: inline-block;" class="lb_bottom">
-					<div style="display: inline-block;">
-						<p><img src="img/tit_01.gif"/>多商必备
-						<span>大牌资源，一件代发</span>
-						</p>
-						<div style="z-index: 999;" id="div2"></div>
-					</div>
-					<div class="bot_ms">
-						<!--<p class="fr" style="border-bottom: none;">今日秒杀</p>-->
-						<div style="display: inline-block;" class="imgr2 fr"><img src="img/lbr2.jpg"/></div>
-					</div>
-					
-					
-				</div>
-				
-				
+			
 				
 			</div>
 			
@@ -361,28 +282,7 @@
 		</div>
 
 		<div id="content1" class="container">
-			<div class="content1_top">
-				
-				<a href="">
-					<span class="floor_num">1F</span>
-					<h2 class="floor_name" style="display: inline-block;">女装货源专区</h2>
-					<span class="floor_go">货源批发市场<b class="to_right"></b></span>
-					
-				</a>
-			</div>
-			<div class="content1_conf1">
-				<div class="conf1_left fl">
-					<ul>
-						<h3></h3>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						<li><a href=""></a></li>
-						
-					</ul>
-				</div>
-				<div class="conf1_center fl"></div>
-				<div class="conf1_right fl"><img src="img/f1r.jpg"/></div>
-			</div>
+			1F
 		</div>
 
 		<div id="content2" class="container">
@@ -566,15 +466,4 @@
 			"url": ""
 		}
 	], 10, 0, 3000, 1);
-	
-	
-	$('.reg_riginf .hd li').mousemove(function(){
-				//排他，清除所有
-				$('.reg_riginf .hd li').attr('class','');
-				//当前的高亮显示
-				$(this).attr('class','active1');
-				//div跟着切换
-				$('.reg_riginf .bd ul').css('display','none');
-				$('.reg_riginf .bd ul').eq($(this).index()).css('display','block');
-			});
 </script>
