@@ -565,12 +565,89 @@ body {
 #content1 .content1_conf1 .conf1_left {
   width: 215px;
   height: 494px;
+  padding-left: 15px;
   border: 1px solid #DDDDDD;
+}
+#content1 .content1_conf1 .conf1_left ul h3 {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #CA2430;
+}
+#content1 .content1_conf1 .conf1_left ul li a {
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  color: #656565;
+}
+#content1 .content1_conf1 .conf1_left .f1_1 {
+  height: 165px;
+  background: url(../img/f1_l1.jpg) no-repeat;
+  background-position: 70px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+#content1 .content1_conf1 .conf1_left .f1_2 {
+  height: 165px;
+  background: url(../img/f1_2.jpg) no-repeat;
+  background-position: 70px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+#content1 .content1_conf1 .conf1_left .f1_3 {
+  height: 164px;
+  background: url(../img/f1_3.jpg) no-repeat;
+  background-position: 70px 0;
+  border-bottom: 1px solid #DDDDDD;
 }
 #content1 .content1_conf1 .conf1_center {
   width: 759px;
   height: 494px;
-  background: #DDDDDD;
+}
+#content1 .content1_conf1 .conf1_center li {
+  box-shadow: 0 0 5px black;
+  padding: 5px 5px 10px 5px;
+  width: 188px;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+}
+#content1 .content1_conf1 .conf1_center li label {
+  font-size: 12px;
+}
+#content1 .content1_conf1 .conf1_center li label a {
+  width: 175px;
+  height: 22px;
+  overflow: hidden;
+  font-weight: normal;
+  display: inline-block;
+  color: #3d3d3d;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#content1 .content1_conf1 .conf1_center li label a:hover {
+  color: red;
+}
+#content1 .content1_conf1 .conf1_center li label .mark_price {
+  width: 47px;
+  height: 16px;
+  text-align: center;
+  display: block;
+  line-height: 16px;
+  color: white;
+  font-family: 新宋体;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: #d51e00;
+}
+#content1 .content1_conf1 .conf1_center li label .mark_prices {
+  font-size: 14px;
+  font-weight: bold;
+}
+#content1 .content1_conf1 .conf1_center img {
+  width: 175px;
+  height: 175px;
 }
 #content1 .content1_conf1 .conf1_right {
   width: 246px;
