@@ -8,7 +8,7 @@ include 'connect.php';
 
 //2.查询表
 
-$sql='select * from xinpinlist';
+$sql='select * from bagslist';
 
 //3.执行查询语句
 $conn->query("SET NAMES utf8");
