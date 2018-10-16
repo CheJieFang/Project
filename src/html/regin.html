@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>多商网 一件代发 男女装,箱包淘宝天猫网店微商货源代销批发网</title>
+		<title>多商注册</title>
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/comn.css" />
 		<link rel="stylesheet" type="text/css" href="../css/regin.css"/>
@@ -86,15 +86,17 @@
 				<div class="reg_input1 reg_com">
 				<span>手机/邮箱：</span>
 				<input type="text" name="reg_name" id="reg_name" value="" placeholder="手机/邮箱" />
-				<span class="reginfom_wrong error" style="display: none;">请填写信息！</span>
-				<span class="reginfom_right" style="display:none;  color: #71b83d;">通过信息验证！</span>
+				<span class="reginfom_wrong reg_namew" style="display: none;">请填写正确的手机号或邮箱！</span>
+				<span class="reginfom_wrong reg_namez" style="display: none;">该用户名已存在！</span>
+				<span class="reginfom_right reg_namer" style="display:none;  color: #71b83d;">通过信息验证！</span>
 				</div>
 				<div class="reg_input2 reg_com">
 				<span>密码：</span>
-				<input type="text" name="reg_name" id="reg_psw" value="" placeholder="密码" />	
+				<input type="password" name="reg_psw" id="reg_psw" value="" placeholder="密码" />	
 			    <i class="i_icon"></i>
-			    <span class="reginfom_wrong" style="display: none;">请填写信息！</span>
-			    <span class="reginfom_right" style="display:none;  color: #71b83d;">通过信息验证！</span>
+			     <span class="reginfom_wrong psw_null" style="display: none;">请输入密码！</span>
+			    <span class="reginfom_wrong psw_wrong" style="display: none;">密码只能是8-20位字母、数字组成！</span>
+			    <span class="reginfom_right psw_true" style="display:none;  color: #71b83d;">通过信息验证！</span>
 				</div>
 				<div class="reg_input3 reg_com">
 				<span>验证码：</span>
@@ -103,7 +105,7 @@
 					<div class="reg_yzm"></div>
 					<span class="refresh" style="width: 26px; height: 26px;"><img src="../img/reg_refresh.jpg"/></span>
 				</span>
-				<span class="reginfom_wrong yzmw" style="position: absolute;right: 35px;top: 0;display: none;" >请填写信息！</span>
+				<span class="reginfom_wrong yzmw" style="position: absolute;right: 35px;top: 0;display: none;" >验证码错误！</span>
 				<span class="reginfom_right yzmr" style="display:none;  color: #71b83d;">通过信息验证！</span>
 				</div>
 				
@@ -113,7 +115,7 @@
 					<a href="" style="    color: #005aa0;">《多商分销系统用户服务协议》</a>
 				</div>
 				<div class="next_btn">
-					<a href="">立即注册，领取淘宝课程券</a>
+					<p href="">立即注册，领取淘宝课程券</p>
 				</div>
 				
 			</div>
@@ -273,7 +275,7 @@
 	</body>
 
 </html>
-<script type="text/javascript" src="../js/suijishu.js">
+<!--<script type="text/javascript" src="../js/suijishu.js">-->
 	
 </script>
 

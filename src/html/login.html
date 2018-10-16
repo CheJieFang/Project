@@ -1,9 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>欢迎登陆</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/comn.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/login.js"></script>
+		<script type="text/javascript" src="../js/toTop.js"></script>
 	</head>
+
 	<body>
+
+		<!--header-->
+		<div id="header" class="container">
+			<div class="logo fl">
+				<a href=""><img src="../img/logo.jpg" /></a>
+			</div>
+		</div>
+
+		<div id="login_box">
+			<div class="login_left fl"><a href=""><img src="../img/login_1.jpg"/></a></div>
+			<div class="login_right fl">
+				<div class="login_form">
+					<div class="login_input">
+			
+						<input type="text" name="login_input" id="login_input" value="" placeholder="用户名/邮箱/手机号"/>
+						<span class="login_wrong nofind" style="display:none ;">用户名不存在</span>
+						<span class="login_wrong noval" style="display:none ;">请填写用户名</span>
+					</div>
+					<div class="login_psw">
+					
+						<input type="password" name="login_psw" id="login_psw" value="" placeholder="密码" />
+						<span class="login_wrong pwsnoval" style="display:none ;">请填写密码</span>
+						<span class="login_wrong pwserror" style="display:none ;">密码错误</span>
+					</div>
+					<div class="login_text">
+						<span>
+							<input type="checkbox" name="login_text" id="login_text" value="" />
+							<label>下次自动登陆</label>
+						</span>
+						<a class="fr" href="">忘记密码？</a>
+						
+					</div>
+					<div class="login_btn">
+						<img src="../img/login_btn.jpg"/>
+					</div>
+					<div class="login_nav">
+						<a class="fr" href="">立即注册？</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer" class="container">
+			<div class="foot_help">
+				<div class="help_bottom">
+					<dl class="fl">
+						<dt>
+							关于
+							<a href="">多商网</a>
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">了解多商网</a>
+								</li>
+								<li>
+									<a href="">加入我们</a>
+								</li>
+								<li>
+									<a href="">联系我们</a>
+								</li>
+								<li>
+									<a href="">常见问题</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="fl">
+						<dt>
+							分销商帮助
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">如何成为分销商</a>
+								</li>
+								<li>
+									<a href="">进货&分销上架流程图</a>
+								</li>
+
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="fl">
+						<dt>
+							成长路径
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">分销商成长路径</a>
+								</li>
+								<li>
+									<a href="">转介绍福利</a>
+								</li>
+								<li>
+									<a href="">邀请有奖</a>
+								</li>
+
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="fl" style="padding-left:60px ;">
+						<dt>
+							报活动
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">申报活动</a>
+								</li>
+								<li>
+									<a href="">活动产品</a>
+								</li>
+
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="fl" style="padding-left: 150px;">
+						<dt>
+							供应商帮助
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">如何成为供应商</a>
+								</li>
+								<li>
+									<a href="">我要入驻</a>
+								</li>
+								<li>
+									<a href="">产品上架流程</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+
+					<dl class="fl" style="padding-left: 80px;">
+						<dt>
+							帮助中心
+						</dt>
+						<dd>
+							<ul>
+								<li>
+									<a href="">找回密码</a>
+								</li>
+								<li>
+									<a href="">常见问题</a>
+								</li>
+								<li>
+									<a href="">多商学院</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="foot_bottom">
+				<div class="bot_center">
+					<img class="img1" src="../img/hy.png" />
+					<img class="img2" src="../img/360logo.png" />
+					<div class="foot_nav">
+						<a href="">关于我们</a>|
+						<a href="">用户帮助</a>|
+						<a href="">法律声明</a>|
+						<a href="">联系我们</a>|
+						<a href="">多商学院</a>|
+						<a href="">经营证照</a>|
+					</div>
+
+					<div class="foot_text">
+						<p>
+							<a href="">趋势动力旗下广州友商信息科技有限公司</a>
+							版权所有@2005-2018
+							<a href="">粤ICP备11099332号</a>
+						</p>
+						<p>
+							<a href="">多商网</a>
+							-珠三角云供应链平台，支持淘宝代销、网店代理，免费提供一件代发
+						</p>
+						<p>地址: 广州市中山大道89号天河软件园华景园区B栋西梯五楼 电话：400-616-3518</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--回到顶部按钮-->
+		<span id="to_top"></span>
 	</body>
+
 </html>
+<!--<script type="text/javascript" src="../js/suijishu.js">-->
+
+</script>

@@ -164,7 +164,7 @@ body {
 #header .h_right {
   height: 100%;
   width: 234px;
-  margin-right: 0;
+  margin-left: 60px;
   /*background: skyblue;*/
 }
 

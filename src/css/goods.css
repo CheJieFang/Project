@@ -1,0 +1,92 @@
+#banner {
+  position: relative;
+  padding: 5px; }
+  #banner .goodb_rig {
+    width: 288px;
+    height: 506px; }
+  #banner .lunbaner {
+    width: 927px;
+    height: 506px;
+    position: absolute;
+    left: 0;
+    top: 5px; }
+  #banner .lbtrtc {
+    position: absolute;
+    width: 927px;
+    height: 360px;
+    overflow: hidden; }
+    #banner .lbtrtc ul {
+      width: 2781px;
+      height: 360px; }
+      #banner .lbtrtc ul li {
+        position: absolute; }
+        #banner .lbtrtc ul li img {
+          width: 927px;
+          height: 360px; }
+    #banner .lbtrtc ol {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    #banner .lbtrtc ol > li {
+      width: 50px;
+      height: 50px;
+      float: left; }
+    #banner .lbtrtc ol span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #DDDDDD;
+      cursor: pointer; }
+    #banner .lbtrtc .selected {
+      background: #FFFFFF; }
+  #banner .lunbobt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 141px;
+    width: 927px; }
+
+#indnav {
+  height: 52px;
+  width: 1326px;
+  background: #FFFFFF; }
+  #indnav ul {
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 52px;
+    line-height: 52px;
+    width: 1224px;
+    background: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD; }
+    #indnav ul .dangqian {
+      color: #d71e00; }
+    #indnav ul li {
+      padding: 0 20px; }
+      #indnav ul li a {
+        font-size: 15px;
+        border-right: 2px solid #DDDDDD;
+        padding-right: 15px; }
+
+#huaf {
+  position: relative;
+  margin: 0 auto;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  width: 1220px;
+  background: url(../img/huafenxian.jpg); }
+  #huaf a {
+    position: absolute;
+    left: 578px;
+    top: 0px; }
+
+#food_list {
+  width: 1220px;
+  height: auto; }
+  #food_list ul {
+    width: 1220px;
+    height: auto; }
+
+/*# sourceMappingURL=goods.css.map */

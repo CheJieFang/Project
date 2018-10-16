@@ -1,0 +1,95 @@
+#header .logo {
+  margin-left: 90px;
+}
+
+#login_box {
+  width: 813px;
+  height: 425px;
+  margin: 27px auto;
+}
+#login_box .login_left {
+  width: 420px;
+  height: 267px;
+}
+#login_box .login_right {
+  width: 310px;
+  height: 267px;
+  margin-left: 50px;
+  border: 1px solid #DDDDDD;
+}
+#login_box .login_right .login_input,
+#login_box .login_right .login_psw {
+  width: 275px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+}
+#login_box .login_right .login_input #login_input,
+#login_box .login_right .login_input #login_psw,
+#login_box .login_right .login_psw #login_input,
+#login_box .login_right .login_psw #login_psw {
+  border: 1px solid #CCCCCC;
+  float: none;
+  font-size: 12px;
+  height: 35px;
+  line-height: 35px;
+  padding: 4px 2px 4px 34px;
+  width: 275px;
+  color: #ccc;
+  margin-left: 20px;
+}
+#login_box .login_right .login_text {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0 20px 0 20px;
+  font-size: 12px;
+}
+#login_box .login_right .login_text label {
+  display: inline-block;
+  width: 72px;
+  height: 16px;
+}
+#login_box .login_right .login_text a {
+  color: #3366cc;
+}
+#login_box .login_btn {
+  width: 275px;
+  height: 30px;
+  margin: 20px 20px 15px 20px;
+}
+#login_box .login_nav a {
+  font-size: 12px;
+  color: #3366cc;
+  margin-right: 20px;
+}
+
+#login_input {
+  background: url(../img/login_users.jpg) no-repeat;
+  background-position: 5px 5px;
+}
+
+.login_wrong {
+  font-size: 12px;
+  display: inline-block;
+  width: 114px;
+  height: 20px;
+  line-height: 20px;
+  color: red;
+  padding-left: 0px;
+  border: 1px solid #ffbdbe;
+  margin-left: 3px;
+  padding: 0 10px;
+  padding-left: 20px;
+  background: url(../img/error.png) no-repeat left center #ffebeb;
+  position: absolute;
+  left: 19px;
+  top: 50px;
+}
+
+#login_psw {
+  background: url(../img/login_psw.jpg) no-repeat;
+  background-position: 5px 5px;
+}
+
+/*# sourceMappingURL=login.css.map */
