@@ -10,7 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/goods.css" />
 		<script src="../js/jquery-1.11.0.min.js"></script>
 		<script src="../js/startMove.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="../js/goodslist.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script type="text/javascript" src="../js/goodslist.js"></script>
 
 	</head>
 
@@ -112,127 +113,130 @@
 		<div id="nav">
 			<div class="container">
 				<ul>
-					<li id="hovx" style="background: #aa1800; width: 238px;text-align: center;" class="fl">
-						<!--二级导航-->
-						<a style="color: #FFFFFF;text-align:center ;box-sizing: border-box;" href="">全部商品分类</a>
+					<div id="hovx" style="position: relative;height: 546px;float: left;width: 238px;">
+						<li id="" style="background: #aa1800; width: 238px;text-align: center;" class="fl">
+							<!--二级导航-->
+							<a style="color: #FFFFFF;text-align:center ;box-sizing: border-box;" href="">全部商品分类</a>
 
-						<div class="nav_tab" style="display: none;">
-							<ul>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i1"></i>
-										<h3 style="height: 38px;line-height: 38px;">时尚女装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+							<div class="nav_tab" style="position: absolute;left: 0;top: 35px;">
+								<ul>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i1"></i>
+											<h3 style="height: 38px;line-height: 38px;">时尚女装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">上衣</span>
-											<span style="font-size: 12px;">裙子</span>
-											<span style="font-size: 12px;">针织毛衣</span>
-											<span style="font-size: 12px;">裤子</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">上衣</span>
+												<span style="font-size: 12px;">裙子</span>
+												<span style="font-size: 12px;">针织毛衣</span>
+												<span style="font-size: 12px;">裤子</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i2"></i>
-										<h3 style="height: 38px;line-height: 38px;">箱包配饰<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i2"></i>
+											<h3 style="height: 38px;line-height: 38px;">箱包配饰<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">女包</span>
-											<span style="font-size: 12px;">双肩包</span>
-											<span style="font-size: 12px;">男包</span>
-											<span style="font-size: 12px;">功能箱包</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">女包</span>
+												<span style="font-size: 12px;">双肩包</span>
+												<span style="font-size: 12px;">男包</span>
+												<span style="font-size: 12px;">功能箱包</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i3"></i>
-										<h3 style="height: 38px;line-height: 38px;">风情鞋靴<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i3"></i>
+											<h3 style="height: 38px;line-height: 38px;">风情鞋靴<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">女式单鞋</span>
-											<span style="font-size: 12px;">女式靴子</span>
-											<span style="font-size: 12px;">休闲女鞋</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">女式单鞋</span>
+												<span style="font-size: 12px;">女式靴子</span>
+												<span style="font-size: 12px;">休闲女鞋</span>
 
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i4"></i>
-										<h3 style="height: 38px;line-height: 38px;">精品男装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i4"></i>
+											<h3 style="height: 38px;line-height: 38px;">精品男装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">内搭</span>
-											<span style="font-size: 12px;">外套</span>
-											<span style="font-size: 12px;">男士裤装</span>
-											<span style="font-size: 12px;">套装</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">内搭</span>
+												<span style="font-size: 12px;">外套</span>
+												<span style="font-size: 12px;">男士裤装</span>
+												<span style="font-size: 12px;">套装</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i5"></i>
-										<h3 style="height: 38px;line-height: 38px;">美容美妆<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i5"></i>
+											<h3 style="height: 38px;line-height: 38px;">美容美妆<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">美容护肤</span>
-											<span style="font-size: 12px;">彩妆/化妆工具</span>
-											<span style="font-size: 12px;">身体护理</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">美容护肤</span>
+												<span style="font-size: 12px;">彩妆/化妆工具</span>
+												<span style="font-size: 12px;">身体护理</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i6"></i>
-										<h3 style="height: 38px;line-height: 38px;">母婴童装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i6"></i>
+											<h3 style="height: 38px;line-height: 38px;">母婴童装<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">童装</span>
-											<span style="font-size: 12px;">孕婴用品</span>
-											<span style="font-size: 12px;">洗护</span>
-											<span style="font-size: 12px;">喂养</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">童装</span>
+												<span style="font-size: 12px;">孕婴用品</span>
+												<span style="font-size: 12px;">洗护</span>
+												<span style="font-size: 12px;">喂养</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px" class="next_nav">
-										<i id="i7"></i>
-										<h3 style="height: 38px;line-height: 38px;">性感内衣<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px" class="next_nav">
+											<i id="i7"></i>
+											<h3 style="height: 38px;line-height: 38px;">性感内衣<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">文胸</span>
-											<span style="font-size: 12px;">内裤</span>
-											<span style="font-size: 12px;">家居服</span>
-											<span style="font-size: 12px;">特色内衣</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">文胸</span>
+												<span style="font-size: 12px;">内裤</span>
+												<span style="font-size: 12px;">家居服</span>
+												<span style="font-size: 12px;">特色内衣</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
-								<li style="height: 63px;">
-									<div style="height: 63px;padding-left: 10px;border-bottom: none;" class="next_nav">
-										<i id="i8"></i>
-										<h3 style="height: 38px;line-height: 38px;">数码电器<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
+									</li>
+									<li style="height: 63px;">
+										<div style="height: 63px;padding-left: 10px;border-bottom: none;" class="next_nav">
+											<i id="i8"></i>
+											<h3 style="height: 38px;line-height: 38px;">数码电器<span style="margin-left: 120px;font-size: 18px;">&gt;</span></h3>
 
-										<div style="text-align: left;">
-											<span style="font-size: 12px;">生活电器</span>
-											<span style="font-size: 12px;">厨房电器</span>
-											<span style="font-size: 12px;">个人洗护</span>
+											<div style="text-align: left;">
+												<span style="font-size: 12px;">生活电器</span>
+												<span style="font-size: 12px;">厨房电器</span>
+												<span style="font-size: 12px;">个人洗护</span>
+											</div>
 										</div>
-									</div>
 
-								</li>
+									</li>
 
-							</ul>
-						</div>
+								</ul>
+							</div>
 
-					</li>
+						</li>
+					</div>
+
 					<li class="fl">
 						<a href="">首页</a>
 					</li>
@@ -277,225 +281,271 @@
 			</div>
 
 		</div>
-<div style="background: #e7dcca;padding-bottom: 10px;">
-	
+		<div style="background: #e7dcca;padding-bottom: 10px;">
 
-		<div id="banner" class="container" style="background: #e7dcca;">
+			<div id="banner" class="container" style="background: #e7dcca;">
 
-			<div class="goodb_rig fr">
-				<img src="../img/goodb_r14.jpg" />
-			</div>
-			<div class="fr lunbaner">
-				<div class="lbtrtc">
-					<ul>
-						<li class="fl">
-							<a href=""><img src="../img/gdslb1.jpg" /></a>
-						</li>
-						<li class="fl">
-							<a href=""><img src="../img/gdslb2.jpg" /></a>
-						</li>
-						<li class="fl">
-							<a href=""><img src="../img/gdslb3.jpg" /></a>
-						</li>
-					</ul>
-					<ol>
-						<li><span class="selected"></span></li>
-						<li><span></span></li>
-						<li><span></span></li>
-					</ol>
+				<div class="goodb_rig fr">
+					<img src="../img/goodb_r14.jpg" />
 				</div>
-				<div class="lunbobt">
+				<div class="fr lunbaner">
+					<div class="lbtrtc">
+						<ul>
+							<li class="fl">
+								<a href=""><img src="../img/gdslb1.jpg" /></a>
+							</li>
+							<li class="fl">
+								<a href=""><img src="../img/gdslb2.jpg" /></a>
+							</li>
+							<li class="fl">
+								<a href=""><img src="../img/gdslb3.jpg" /></a>
+							</li>
+						</ul>
 						<ol>
-							<li class="fl"><img src="../img/banbt1.jpg"/></li>
-							<li class="fl"><img src="../img/banbt2.jpg"/></li>
-							<li class="fl"><img src="../img/banbt3.jpg"/></li>
+							<li><span class="selected"></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
 						</ol>
-				</div>
+					</div>
+					<div class="lunbobt">
+						<ol>
+							<li class="fl"><img src="../img/banbt1.jpg" /></li>
+							<li class="fl"><img src="../img/banbt2.jpg" /></li>
+							<li class="fl"><img src="../img/banbt3.jpg" /></li>
+						</ol>
+					</div>
 
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<div id="tbody" style="width: 1320px;height: auto;background: #F3F3F3;">
+
+			<div id="indnav">
+				<ul>
+					<li class="fl">
+						<a href="" class=" dangqian">新品首发</a>
+					</li>
+					<li class="fl">
+						<a href="">主推爆款</a>
+					</li>
+					<li class="fl">
+						<a href="">毛衣卫衣</a>
+					</li>
+					<li class="fl">
+						<a href="">裙装专区</a>
+					</li>
+					<li class="fl">
+						<a href="">裤装专区</a>
+					</li>
+					<li class="fl">
+						<a href="">套装专区</a>
+					</li>
+					<li class="fl">
+						<a href="">冬季爆款上衣</a>
+					</li>
+				</ul>
 			</div>
 
-		</div>
-		</div>
+			<div id="huaf">
+				<a href="">卫衣毛衣</a>
+			</div>
 
-	</div>
-	<div id="tbody" style="width: 1320px;height: auto;background: #F3F3F3;">
-		
-	
-	<div id="indnav">
-		<ul>
-			<li class="fl"><a href="" class=" dangqian">新品首发</a></li>
-			<li class="fl"><a href="">主推爆款</a></li>
-			<li class="fl"><a href="">毛衣卫衣</a></li>
-			<li class="fl"><a href="">裙装专区</a></li>
-			<li class="fl"><a href="">裤装专区</a></li>
-			<li class="fl"><a href="">套装专区</a></li>
-			<li class="fl"><a href="">冬季爆款上衣</a></li>
-		</ul>
-	</div>
-	
-	<div id="huaf">
-		<a href="">新品首发</a></div>
-		
-		<div id="food_list">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		
-		
-		<div id="footer" class="container" style="background: #FFFFFF;background: url(../img/foot.jpg) no-repeat;">
-			<div class="foot_help">
-				<div class="help_bottom">
-					<dl class="fl">
-						<dt>
+			<div id="food_list" class="container">
+				<ul id="goodsList">
+					<!--<li class="fl">
+						<p style="display: inline-block;width: 188px;">
+							<a href=""><img src="../img/loading.gif" data-src="../img/goodsimg1.jpg"/></a>
+						</p>
+
+						<div class="title"><a href="">【活动款】Lynn Jane 一字领羊毛套头针织衫女中长款拼色慵懒风长袖秋冬羊绒衫</a></div>
+						<div class="wrap">
+							<a class="company" href="">坚实的借记卡if扣扣哦法克if看</a>
+							<p class="fr" style="height: 16px;">已售<label>123件</label></p>
+						</div>
+						<div class="wrap">
+							<a href="" style="color: #d71e00;text-align: left;">￥152.50</a>
+							<a class="fr" href="" style="width: 68px;height:24px;background: #d71e00;color: white;margin-right: 10px;margin-right: 22px;line-height: 24px;">立即上架</a>
+						</div>
+					</li>-->
+
+				</ul>
+				<div style="clear: both;"></div>
+				<div id="huaf">
+					<a href="">时尚套装</a>
+				</div>
+				<ul id="goodsList2">
+					<!--<li class="fl">
+						<p style="display: inline-block;width: 188px;">
+							<a href=""><img src="../img/loading.gif" data-src="../img/goodsimg1.jpg"/></a>
+						</p>
+
+						<div class="title"><a href="">【活动款】Lynn Jane 一字领羊毛套头针织衫女中长款拼色慵懒风长袖秋冬羊绒衫</a></div>
+						<div class="wrap">
+							<a class="company" href="">坚实的借记卡if扣扣哦法克if看</a>
+							<p class="fr" style="height: 16px;">已售<label>123件</label></p>
+						</div>
+						<div class="wrap">
+							<a href="" style="color: #d71e00;text-align: left;">￥152.50</a>
+							<a class="fr" href="" style="width: 68px;height:24px;background: #d71e00;color: white;margin-right: 10px;margin-right: 22px;line-height: 24px;">立即上架</a>
+						</div>
+					</li>-->
+
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div id="footer" class="container" style="background: #FFFFFF;background: url(../img/foot.jpg) no-repeat;">
+				<div class="foot_help">
+					<div class="help_bottom">
+						<dl class="fl">
+							<dt>
 							关于
 							<a href="">多商网</a>
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">了解多商网</a>
-								</li>
-								<li>
-									<a href="">加入我们</a>
-								</li>
-								<li>
-									<a href="">联系我们</a>
-								</li>
-								<li>
-									<a href="">常见问题</a>
-								</li>
-							</ul>
-						</dd>
-					</dl>
+							<dd>
+								<ul>
+									<li>
+										<a href="">了解多商网</a>
+									</li>
+									<li>
+										<a href="">加入我们</a>
+									</li>
+									<li>
+										<a href="">联系我们</a>
+									</li>
+									<li>
+										<a href="">常见问题</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
 
-					<dl class="fl">
-						<dt>
+						<dl class="fl">
+							<dt>
 							分销商帮助
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">如何成为分销商</a>
-								</li>
-								<li>
-									<a href="">进货&分销上架流程图</a>
-								</li>
+							<dd>
+								<ul>
+									<li>
+										<a href="">如何成为分销商</a>
+									</li>
+									<li>
+										<a href="">进货&分销上架流程图</a>
+									</li>
 
-							</ul>
-						</dd>
-					</dl>
+								</ul>
+							</dd>
+						</dl>
 
-					<dl class="fl">
-						<dt>
+						<dl class="fl">
+							<dt>
 							成长路径
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">分销商成长路径</a>
-								</li>
-								<li>
-									<a href="">转介绍福利</a>
-								</li>
-								<li>
-									<a href="">邀请有奖</a>
-								</li>
+							<dd>
+								<ul>
+									<li>
+										<a href="">分销商成长路径</a>
+									</li>
+									<li>
+										<a href="">转介绍福利</a>
+									</li>
+									<li>
+										<a href="">邀请有奖</a>
+									</li>
 
-							</ul>
-						</dd>
-					</dl>
+								</ul>
+							</dd>
+						</dl>
 
-					<dl class="fl" style="padding-left:60px ;">
-						<dt>
+						<dl class="fl" style="padding-left:60px ;">
+							<dt>
 							报活动
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">申报活动</a>
-								</li>
-								<li>
-									<a href="">活动产品</a>
-								</li>
+							<dd>
+								<ul>
+									<li>
+										<a href="">申报活动</a>
+									</li>
+									<li>
+										<a href="">活动产品</a>
+									</li>
 
-							</ul>
-						</dd>
-					</dl>
+								</ul>
+							</dd>
+						</dl>
 
-					<dl class="fl" style="padding-left: 150px;">
-						<dt>
+						<dl class="fl" style="padding-left: 150px;">
+							<dt>
 							供应商帮助
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">如何成为供应商</a>
-								</li>
-								<li>
-									<a href="">我要入驻</a>
-								</li>
-								<li>
-									<a href="">产品上架流程</a>
-								</li>
-							</ul>
-						</dd>
-					</dl>
+							<dd>
+								<ul>
+									<li>
+										<a href="">如何成为供应商</a>
+									</li>
+									<li>
+										<a href="">我要入驻</a>
+									</li>
+									<li>
+										<a href="">产品上架流程</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
 
-					<dl class="fl" style="padding-left: 80px;">
-						<dt>
+						<dl class="fl" style="padding-left: 80px;">
+							<dt>
 							帮助中心
 						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="">找回密码</a>
-								</li>
-								<li>
-									<a href="">常见问题</a>
-								</li>
-								<li>
-									<a href="">多商学院</a>
-								</li>
-							</ul>
-						</dd>
-					</dl>
+							<dd>
+								<ul>
+									<li>
+										<a href="">找回密码</a>
+									</li>
+									<li>
+										<a href="">常见问题</a>
+									</li>
+									<li>
+										<a href="">多商学院</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
 				</div>
-			</div>
 
-			<div class="foot_bottom">
-				<div class="bot_center">
-					<img class="img1" src="../img/hy.png" />
-					<img class="img2" src="../img/360logo.png" />
-					<div class="foot_nav">
-						<a href="">关于我们</a>|
-						<a href="">用户帮助</a>|
-						<a href="">法律声明</a>|
-						<a href="">联系我们</a>|
-						<a href="">多商学院</a>|
-						<a href="">经营证照</a>|
+				<div class="foot_bottom">
+					<div class="bot_center">
+						<img class="img1" src="../img/hy.png" />
+						<img class="img2" src="../img/360logo.png" />
+						<div class="foot_nav">
+							<a href="">关于我们</a>|
+							<a href="">用户帮助</a>|
+							<a href="">法律声明</a>|
+							<a href="">联系我们</a>|
+							<a href="">多商学院</a>|
+							<a href="">经营证照</a>|
+						</div>
+
+						<div class="foot_text">
+							<p>
+								<a href="">趋势动力旗下广州友商信息科技有限公司</a>
+								版权所有@2005-2018
+								<a href="">粤ICP备11099332号</a>
+							</p>
+							<p>
+								<a href="">多商网</a>
+								-珠三角云供应链平台，支持淘宝代销、网店代理，免费提供一件代发
+							</p>
+							<p>地址: 广州市中山大道89号天河软件园华景园区B栋西梯五楼 电话：400-616-3518</p>
+						</div>
+
 					</div>
-
-					<div class="foot_text">
-						<p>
-							<a href="">趋势动力旗下广州友商信息科技有限公司</a>
-							版权所有@2005-2018
-							<a href="">粤ICP备11099332号</a>
-						</p>
-						<p>
-							<a href="">多商网</a>
-							-珠三角云供应链平台，支持淘宝代销、网店代理，免费提供一件代发
-						</p>
-						<p>地址: 广州市中山大道89号天河软件园华景园区B栋西梯五楼 电话：400-616-3518</p>
-					</div>
-
 				</div>
 			</div>
 		</div>
-</div>
 	</body>
 
 </html>
-

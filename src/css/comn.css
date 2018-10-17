@@ -164,7 +164,7 @@ body {
 #header .h_right {
   height: 100%;
   width: 234px;
-  margin-right: 0;
+  margin-left: 60px;
   /*background: skyblue;*/
 }
 
@@ -431,5 +431,19 @@ body {
   height: 24px;
   line-height: 24px;
 }
+/*回到顶部*/
+#to_top {
+    display: inline-block;
+    width: 60px;
+    height: 54px;
+    position: fixed;
+    right: 2px;
+    bottom: 10px;
+    background: url(../img/to_top.png)no-repeat;
+    cursor: pointer;
+}
 
+#to_top:hover {
+    background: url(../img/to_tophover.png)no-repeat;
+}
 /*# sourceMappingURL=index.css.map */

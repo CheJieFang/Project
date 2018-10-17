@@ -1,47 +1,104 @@
-$(function(){
-	var div=$('.lbtrtc');
-	var lis=$('.lbtrtc ul li');
-	var btns=$('ol span');
-	var len=btns.length;
-	var now=0;
-	
+$(function() {
+
+	//透明轮播
+	var div = $('.lbtrtc');
+	var lis = $('.lbtrtc ul li');
+	var btns = $('ol span');
+	var len = btns.length;
+	var now = 0;
+
 	tab();
-	
-	for( let i=0; i<len; i++ ){
-		btns[i].onclick = function(){
-			now=i;
+
+	for(let i = 0; i < len; i++) {
+		btns[i].onclick = function() {
+			now = i;
 			tab();
 		}
 	}
-	
-	function tab(){
-		for(let j=0; j<len; j++){
+
+	function tab() {
+		for(let j = 0; j < len; j++) {
 			btns[j].className = "";
 			lis[j].style.display = "block";
-			startMove(lis[j], {"opacity":0}, function(){
-				lis[j].style.display = "none";//如果没有这个回调函数的话，当点击任意一张轮播图的时候，
-//				都会跳到最后一张图片对应的链接，原因是虽然图片的透明度为0，但是事实上图片依然存在，只是肉眼看不见。
-//              因为定位的缘故，所以第四张图片在最顶层，所以点击的时候实际上点击的是第四张图片的链接，此处的回调函数就能解决这个问题
+			startMove(lis[j], {
+				"opacity": 0
+			}, function() {
+				lis[j].style.display = "none";
 			});
 		}
 		btns[now].className = "selected";
-		startMove(lis[now], {"opacity":100});
+		startMove(lis[now], {
+			"opacity": 100
+		});
 	}
-	
-	function next(){
+
+	function next() {
 		now++;
-		if( now==len ){
-			now=0;
+		if(now == len) {
+			now = 0;
 		}
 		tab()
 	}
-	
+
 	var timer = setInterval(next, 2000);
-	div.onmouseover = function(){
+	div.onmouseover = function() {
 		clearInterval(timer);
 	}
-	div.onmouseout = function(){
+	div.onmouseout = function() {
 		timer = setInterval(next, 2000);
 	}
+
+	var html = ``;
+	var html2 = ``;
+	$.ajax({
+		type: "get",
+		url: "../api/selectgoodls.php",
+		async: true,
+		success: function(str) {
+			var data = JSON.parse(str);
+			//			console.log(data);
+			for(var i = 0; i < data.length; i++) {
+				html += `<li class="fl">
+						<p style="display: inline-block;width: 188px;">
+							<a href="cars.html?id=${data[i].good_id}"><img src="../img/loading.gif" data-src="${data[i].url}"/></a>
+						</p>
+
+						<div class="title"><a href="">${data[i].good_inf}</a></div>
+						<div class="wrap">
+							<a class="company" href="">${data[i].good_company}</a>
+							<p class="fr" style="height: 16px;">已售<label>${data[i].good_nums}件</label></p>
+						</div>
+						<div class="wrap">
+							<a href="" style="color: #d71e00;text-align: left;">￥${data[i].good_prices}</a>
+							<a class="fr" href="" style="width: 68px;height:24px;background: #d71e00;color: white;margin-right: 10px;margin-right: 22px;line-height: 24px;text-align: center;">立即上架</a>
+						</div>
+					</li>
+					`;
+			}
+			$('#goodsList').html(html);
+			var loadImages = lazyload();
+			loadImages(); //初始化首页的页面图片
+			window.addEventListener('scroll', loadImages, false);
+			var len = data.length;
+			var images = $('#goodsList img');
+
+			function lazyload() {
+				var n = 0; //存储图片加载到的位置，避免每次都从第一张图片开始遍历        
+				return function() {
+					var seeHeight = document.documentElement.clientHeight;
+					var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+					for(var i = n; i < len; i++) {
+						if(images[i].offsetTop < seeHeight + scrollTop) {
+							if(images[i].getAttribute('src') === '../img/loading.gif') {
+								images[i].src = images[i].getAttribute('data-src');
+							}
+							n = n + 1;
+						}
+					}
+				}
+			}
+		}
+	});
+
 	
 })

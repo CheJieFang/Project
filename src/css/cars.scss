@@ -1,0 +1,235 @@
+#banner{
+    height:650px ;
+    padding-left: 38px;
+    background: #FFFFFF;
+  
+    h1{
+        height: 60px;
+        line-height: 60px;
+        
+    }
+    .banner_left{
+        position: relative;
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 994px;
+        height: 568px;
+//      background: skyblue;
+         box-shadow: 0 0 5px black;
+         .goodInf{
+             width: 552px;
+             height: 558px;
+             position: absolute;
+             right: 10px;
+             top:10px;
+              border-left: 1px solid #DDDDDD;
+             .inftitle{
+                 height: 94px;
+                 width: 100%;
+                 background: #f31200;
+                 .type{
+                     height: 94px;
+                     width: 71px;
+                     background:#aa1800;
+                     color: #FFFFFF;
+                     padding-top: 20px;
+                     text-align: center;
+                 }
+                 .price{
+                     color: #FFFFFF;
+                     font-size:12px ;
+                     padding-top: 20px;
+                     padding-left: 20px;
+                     .num{
+                         font-size: 25px;
+                         margin-top: 15px;
+                     }
+                 }
+             }
+         }
+         
+        .goodtials{
+            font-size: 14px;
+            width: 551px;
+            height: 158px;
+            padding-left: 44px;
+           
+            p{
+                color: #666666;
+                height: 42px;
+                line-height: 42px;
+                font-size: 14px;
+                padding: 10px;
+                span{
+                    font-size: 12px;
+                    font-weight: normal;
+                    .jg{
+                        color: #ff7300;
+                    }
+                }
+                
+            }
+            .promise{
+                padding: 10px; 
+                font-size: 12px;
+                color: #666666;
+            }
+            .goodsNum{
+                padding-left: 10px;
+                height: 30px;
+                line-height: 30px;
+                color: #666666;
+                font-size: 12px;
+                input{
+                    width: 40px;
+                }
+               
+            }
+            .huod{
+                height: 30px;
+                line-height: 30px;
+                padding-left: 10px;
+                color: #666666;
+            }
+            .tell{
+                padding-left: 10px;
+                height: 88px;
+                width: 546px;
+                ul{
+                    padding-left: 10px;
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+                    height: 88px;
+                    width: 500px;
+                    border-top: 1px dashed #DDDDDD;
+                    border-bottom: 1px dashed #DDDDDD;
+                    li{
+                        margin-right: 10px;
+                        margin-top: 24px;
+                        a{  
+                            font-size:12px ;
+                            display: inline-block;
+                            height: 30px;
+                            width: 100px;
+                            padding: 5px 22px 5px 5px;
+//                           color: #FFFFFF;
+                        }
+                        a:nth-child(1){
+                            background: url(../img/upprotipw_15.jpg)no-repeat;
+                            background-position: right;
+                        }
+                       
+                    }
+               
+                }
+            }
+        }
+    }
+    .banner_right{
+         width: 255px;
+        height: 508px;
+        border:1px solid #DDDDDD
+    }
+}
+.box {
+                width: 710px;
+                /*margin: 100px auto;*/
+            }
+            
+            .tb-pic a {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .tb-pic a img {
+                vertical-align: middle;
+            }
+            
+            .tb-pic a {
+                *display: block;
+                *font-family: Arial;
+                *line-height: 1;
+            }
+            
+            .tb-thumb {
+                margin: 10px 0 0;
+                overflow: hidden;
+            }
+            
+            .tb-thumb li {
+                background: none repeat scroll 0 0 transparent;
+                float: left;
+                height: 42px;
+                margin: 0 6px 0 0;
+                overflow: hidden;
+                padding: 1px;
+            }
+            
+            .tb-s310,
+            .tb-s310 a {
+                height: 350px;
+                width: 350px;
+            }
+            
+            .tb-s310,
+            .tb-s310 img {
+                max-height: 350px;
+                max-width: 350px;
+            }
+            
+            .tb-s310 a {
+                *font-size: 271px;
+            }
+            
+            .tb-s40 a {
+                *font-size: 35px;
+            }
+            
+            .tb-s40,
+            .tb-s40 a {
+                height: 40px;
+                width: 40px;
+            }
+            
+            .tb-booth {
+                border: 1px solid #CDCDCD;
+                position: relative;
+                z-index: 1;
+            }
+            
+            .tb-thumb .tb-selected {
+                background: none repeat scroll 0 0 #C30008;
+                height: 40px;
+                padding: 2px;
+            }
+            
+            .tb-thumb .tb-selected div {
+                background-color: #FFFFFF;
+                border: medium none;
+            }
+            
+            .tb-thumb li div {
+                border: 1px solid #CDCDCD;
+            }
+            
+            div.zoomDiv {
+                z-index: 999;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 200px;
+                height: 200px;
+                background: #ffffff;
+                /*border: 1px solid #CCCCCC;*/
+                display: none;
+                text-align: center;
+                overflow: hidden;
+            }
+            
+            div.zoomMask {
+                position: absolute;
+                background: url("images/mask.png") repeat scroll 0 0 transparent;
+                cursor: move;
+                z-index: 1;
+            }

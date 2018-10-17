@@ -1,11 +1,25 @@
 
+
+
 #banner {
     position: relative;
     padding: 5px;
     .goodb_rig{
     width: 288px;
     height: 506px;
+    
 }
+#erdbox{
+        float: left;
+        width: 238px;
+        height: 521px;
+        background: skyblue;
+        position: absolute;
+        left: 0;
+        top: 0;
+//      display: none;
+}
+
 .lunbaner{
     width: 927px;
     height: 506px;
@@ -110,12 +124,60 @@
 
 #food_list{
     width: 1220px;
-    height: auto;
+//  min-height: 800px;
     ul{
         width: 1220px;
-        height: auto;
+//       min-height: 800px;
+         font-size: 12px;
         li{
+            p{
+                display: inline-block;
+                width: 218px;
+                height: 218px;
+             img{
+                width: 218px;
+                height: 218px;
+           }
+            }
+            .title a{
+                 text-overflow: ellipsis;
+            }
+            .wrap{
+                width: 236px;
+                margin-bottom: 5px;
+                a{
+                    display: inline-block;
+                    width: 100px;
+                    
+//                  padding: 0 10px 0 10px;
+                }
+                .company{
+                    width: 88px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+               p{
+                   width: 100px;
+                   text-align: right;
+                   margin-right: 22px;
+                }
+            }
+             float: left;
+            width: 234px;
+            background: #fff;
+            padding: 8px;
+            border: 1px solid #e8e8e8;
+            margin: 0 4px 8px;
             
+            .title a{
+                height: 50px;
+                line-height: 20px;
+                overflow: hidden;
+                color: #000;
+                display: block;
+            }
+           
         }
     }
 }
