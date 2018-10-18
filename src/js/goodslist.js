@@ -60,7 +60,7 @@ $(function() {
 			for(var i = 0; i < data.length; i++) {
 				html += `<li class="fl">
 						<p style="display: inline-block;width: 188px;">
-							<a href="cars.html?id=${data[i].good_id}"><img src="../img/loading.gif" data-src="${data[i].url}"/></a>
+							<a href="goodInfo?id=${data[i].good_id}"><img src="../img/loading.gif" data-src="${data[i].url}"/></a>
 						</p>
 
 						<div class="title"><a href="">${data[i].good_inf}</a></div>

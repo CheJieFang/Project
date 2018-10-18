@@ -1,0 +1,146 @@
+#cartitle {
+    position: relative;
+    width: 1326px;
+    height: 70px;
+    background: #f2323b;
+//  line-height: 70px;
+    p {
+        width: 104px;
+        height: 35px;
+    }
+    .title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    .tfind_box {
+        width: 543px;
+        height: 45px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 13px;
+        right: 60px;
+        border-radius: 5px;
+        #title_fid {
+            float: left;
+            width: 427px;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 45px;
+            border-radius: 5px;
+            background: url(../img/dsImg_8.jpg)no-repeat;
+            background-position: 20px;
+        }
+        a {
+            box-shadow: 1px 1px 5px #ccc;
+            float: left;
+            display: inline-block;
+            width: 116px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 0px 5px 5px 0px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            background: #343434;
+        }
+    }  
+}
+
+.map{
+        height: 35px;
+        line-height: 35px;
+}
+    
+.shoppertop{
+    height: 40px;
+    line-height: 40px;
+}
+.gyshang{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.storBox{
+    height: 157px;
+    padding: 30px 0;
+    .d1_w{
+        position: relative;
+        padding-left: 20px;
+        width: 345px;
+        height: 96px;
+        .cheb{
+            position: absolute;
+            left: 10px;
+            top: 0px;
+        }
+        img{
+            width: 96px;
+            height: 96px;
+            margin-left: 20px;
+        }
+        .infomation{
+            width: 160px;
+            min-height: 200px;
+            font-size: 14px;
+            position: absolute;
+            right:35px;
+            top: 0;
+        }
+        p{
+            display: inline-block;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.goodsize{
+    width: 328px;
+    height: 50px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    
+    .good_l{
+        width: 120px;
+        height: 50px;
+        border-right: 1px solid #DDDDDD;
+    }
+    .good_r{
+        position: relative;
+        text-align: center;
+        width: 206px;
+        height: 50px;
+        line-height: 50px;
+        a{
+            display: inline-block;
+            width: 30px;
+            height:30px;
+            background: #D9D9D9;
+            text-align: center;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .add{
+            position: absolute;
+            right: 35px;
+            top: 11px;
+            
+        }
+         .cut{
+            position: absolute;
+            right: 117px;
+            top: 11px;
+            
+        }
+        input{
+            width: 50px;
+            height: 30px;
+            box-shadow: 0 0 5px black;
+        }
+    }
+}

@@ -6,6 +6,9 @@
 #banner h1 {
   height: 60px;
   line-height: 60px;
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
 }
 #banner .banner_left {
   position: relative;
@@ -93,6 +96,7 @@
   width: 546px;
 }
 #banner .banner_left .goodtials .tell ul {
+  position: relative;
   padding-left: 10px;
   margin-bottom: 10px;
   margin-top: 15px;
@@ -106,15 +110,167 @@
   margin-top: 24px;
 }
 #banner .banner_left .goodtials .tell ul li a {
+  color: #FFFFFF;
   font-size: 12px;
   display: inline-block;
   height: 30px;
   width: 100px;
   padding: 5px 22px 5px 5px;
 }
-#banner .banner_left .goodtials .tell ul li a:nth-child(1) {
+#banner .banner_left .goodtials .tell ul li .a1,
+#banner .banner_left .goodtials .tell ul li .a4 {
   background: url(../img/upprotipw_15.jpg) no-repeat;
   background-position: right;
+}
+#banner .banner_left .goodtials .tell ul li .a2 {
+  background: url(../img/upprotipw_11.jpg) no-repeat;
+  background-position: right;
+}
+#banner .banner_left .goodtials .tell ul li .a3 {
+  background: url(../img/upprotipw_13.jpg) no-repeat;
+  background-position: right;
+}
+#banner .banner_left .goodtials .tell ul .a5 {
+  text-decoration: underline;
+  color: deepskyblue;
+  position: absolute;
+  bottom: 10px;
+  right: 172px;
+}
+#banner .banner_left .find_Style {
+  width: 506px;
+  height: 106px;
+  padding-left: 10px;
+  padding-top: 15px;
+  color: #666666;
+  border-bottom: 1px solid #DDDDDD;
+}
+#banner .banner_left .find_Style ul {
+  height: 35px;
+}
+#banner .banner_left .find_Style ul li {
+  padding: 1px 7px;
+  border: 2px solid #DDDDDD;
+  margin-right: 20px;
+  font-size: 14px;
+}
+#banner .banner_left .find_Style li:hover {
+  border: 2px solid #d61e00;
+}
+#banner .banner_left .find_Size {
+  position: relative;
+  width: 501px;
+  height: 44px;
+}
+#banner .banner_left .find_Size .cm {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+#banner .banner_left .find_Size .shul {
+  font-size: 12px;
+  color: #666666;
+  margin-left: 80px;
+  height: 44px;
+  line-height: 44px;
+}
+#banner .banner_left .find_Size .shul span {
+  margin-right: 20px;
+}
+#banner .banner_left .find_Size .jiajian {
+  position: absolute;
+  right: 0px;
+  bottom: 3px;
+  height: 28px;
+  width: 150px;
+}
+#banner .banner_left .find_Size .jiajian a {
+  float: left;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #e5e5e5;
+  background-color: #f8f8f8;
+  line-height: 200px;
+  overflow: hidden;
+}
+#banner .banner_left .find_Size .jiajian .jian {
+  background: url(../img/skubg.png) no-repeat;
+  background-position: -32px -52px;
+}
+#banner .banner_left .find_Size .jiajian .jia {
+  background: url(../img/skubg.png) no-repeat;
+  background-position: 8px 8px;
+}
+#banner .banner_left .find_Size .jiajian input {
+  float: left;
+  width: 35px;
+  height: 26px;
+  line-height: 22px;
+  padding: 2px 0 2px 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e5e5 #efefef;
+}
+#banner .banner_left .find_fg {
+  width: 506px;
+  padding-left: 10px;
+  height: 105px;
+  padding-top: 15px;
+}
+#banner .banner_left .find_fg .zongj {
+  color: #d61e00;
+  font-size: 13px;
+}
+#banner .banner_left .find_fg .zongj span {
+  font-size: 19px;
+}
+#banner .banner_left .find_fg .zongj a {
+  text-decoration: underline;
+  color: #0c83df;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#banner .banner_left .find_fg .zongj p {
+  height: 48px;
+  width: 404px;
+}
+#banner .banner_left .find_fg .ljxd {
+  display: inline-block;
+  height: 44px;
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  background: #e52019;
+  color: #fff;
+  border: 2px solid #e52019;
+  border-radius: 2px;
+  margin-left: 42px;
+  margin-right: 15px;
+}
+#banner .banner_left .find_fg .jhd {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  background: pink;
+  border: 2px solid #e52019;
+  border-radius: 2px;
+  padding-left: 20px;
+  background-position: left;
+  color: brown;
+  cursor: pointer;
+}
+#banner .banner_left .find_fg .jhd i {
+  position: absolute;
+  left: 42px;
+  top: 6px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/pro_bga.jpg) no-repeat;
+  background-position: left;
 }
 #banner .banner_right {
   width: 255px;
@@ -123,7 +279,7 @@
 }
 
 .box {
-  width: 710px;
+  width: 840px;
   /*margin: 100px auto;*/
 }
 
@@ -149,9 +305,8 @@
 }
 
 .tb-thumb li {
-  background: none repeat scroll 0 0 transparent;
   float: left;
-  height: 42px;
+  height: 56px;
   margin: 0 6px 0 0;
   overflow: hidden;
   padding: 1px;
@@ -159,14 +314,14 @@
 
 .tb-s310,
 .tb-s310 a {
-  height: 350px;
-  width: 350px;
+  height: 420px;
+  width: 420px;
 }
 
 .tb-s310,
 .tb-s310 img {
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 420px;
+  max-width: 420px;
 }
 
 .tb-s310 a {
@@ -179,8 +334,8 @@
 
 .tb-s40,
 .tb-s40 a {
-  height: 40px;
-  width: 40px;
+  height: 56px;
+  width: 56px;
 }
 
 .tb-booth {
@@ -190,8 +345,8 @@
 }
 
 .tb-thumb .tb-selected {
-  background: none repeat scroll 0 0 #C30008;
-  height: 40px;
+  border: 1px solid #C30008;
+  height: 56px;
   padding: 2px;
 }
 
@@ -209,10 +364,10 @@ div.zoomDiv {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background: #ffffff;
-  /*border: 1px solid #CCCCCC;*/
+  border: 1px solid #CCCCCC;
   display: none;
   text-align: center;
   overflow: hidden;
@@ -220,7 +375,7 @@ div.zoomDiv {
 
 div.zoomMask {
   position: absolute;
-  background: url("images/mask.png") repeat scroll 0 0 transparent;
+  background: url(../images/imgs/mask.png) repeat scroll 0 0 transparent;
   cursor: move;
   z-index: 1;
 }
