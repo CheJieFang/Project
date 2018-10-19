@@ -3,11 +3,14 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>多商网 一件代发 男女装,箱包淘宝天猫网店微商货源代销批发网</title>
+		<title>我的购物车</title>
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/comment.css" />
 		<link rel="stylesheet" type="text/css" href="../css/comn.css" />
 		<link rel="stylesheet" type="text/css" href="../css/buycars.css" />
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/carts.js"></script>
 	</head>
 
 	<body>
@@ -22,7 +25,7 @@
 							<a href="">多商网</a>
 						</h1>
 						<a href="">首页</a>
-						<span class="hello">您好，欢迎来到</span>
+						<span class="hello">您好<a>lily</a>,欢迎来到</span>
 						<label>多商网！</label> [
 						<a href="">请登录</a>] [
 						<a href="">免费注册</a>]
@@ -51,7 +54,7 @@
 			</div>
 		</div>
 
-	<div id="cartitle">
+			<div id="cartitle">
 			<div class="container">
 				<p><a href="" class="title">买家中心</a></p>
 				<div class="tfind_box">
@@ -69,19 +72,24 @@
 					<span>我的多商网</span>>
 					<span>我的进货车</span>
 		</div>
+		
 		<div class="shoppertop">
 			<div class="container">
 				<input type="checkbox" name="" id="" value="" />
-				<span>全选</span>
-				<span>商品信息</span>
-				<span>规格</span>
-				<span>单价</span>
-				<span>总数</span>
-				<span>小计</span>
-				<span>总数</span>
+				<span class="span1">全选</span>
+				<span class="span2">商品信息</span>
+				<span class="span3">规格</span>
+				<span class="span4">单价</span>
+				<span class="span5">总数</span>
+				<span class="span6">单价</span>
+				<span class="span7">操作</span>
 			</div>
 		</div>
-		<div class="container gyshang">供应商：<span>店名</span></div>
+		<div id="carslist" style="position: relative;">
+			
+		<!--
+			<div id="listBox">
+			<div class="container gyshang">供应商：<span>店名</span></div>
 		<div class="container storBox">
 			<div class="d1_w">
 				<input type="checkbox" name="" id="" value="" class="cheb"/>
@@ -92,7 +100,7 @@
 				</div>
 				<div class="goodsize">
 					<div class="good_l fl">
-						<span>黑色</span>
+						<span class="styles">黑色</span>
 					</div>
 					<div class="good_r fr">
 						<span>35</span>
@@ -101,10 +109,36 @@
 						<a class="add" href="">+</a>
 					</div>
 				</div>
-				
+			
+			</div>
+				<div class="box_right">
+					<div class="fl box1" style="width: 100px;">
+						<span>￥330.00</span><br />
+						<span style="text-decoration: line-through;">原价￥330.00</span>
+					</div>
+					<div class="fl box2">1</div>
+					<div class="fl box3">￥330.00</div>
+					<div class="fl box4"><img src="../img/dsImg_56.jpg"/></div>
+				</div>
+		</div>
+		<div class="container" style="height: 70px;">
+			<div class="calculate fr">
+				<span>已进货商品<span>1</span> 件</span>
+				<span style="color:#ff0c17">合计（不含运费）：￥<span>330.00</span></span>
+				<a href="">结算</a>
 			</div>
 		</div>
+		</div>
+	-->
 	
+	<div id="delete" class="container">
+		<input type="checkbox" name="" id="allchecked" value=""/>
+		<span  style="margin-right: 5px;">全选</span><a id="delbtn">删除</a>
+	</div>
+	
+	</div>
+		<div class="container">最近浏览</div>
+		<div class="container liulan"></div>
 		<div id="footer" class="container">
 			<div class="foot_help">
 				<div class="help_bottom">
@@ -258,20 +292,3 @@
 	</body>
 
 </html>
-<script type="text/javascript">
-	$(document).ready(function() {
-
-		$(".jqzoom").imagezoom();
-
-		$("#thumblist li a").click(function() {
-
-			$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
-
-			$(".jqzoom").attr('src', $(this).find("img").attr("mid"));
-
-			$(".jqzoom").attr('rel', $(this).find("img").attr("big"));
-
-		});
-
-	});
-</script>

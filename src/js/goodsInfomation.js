@@ -168,23 +168,55 @@ $(function(){
 	}
 	})
 	
-	console.log(id);
 	
+	
+	//点击加入进货单
 	$('.goodInf').delegate('.jhd','click',function(){
 		var number=$(this).parent().prev().find('.total').text();
 		console.log(number);
 		if(number!=0){
 			alert('添加成功');
-			$(this).attr('href','cars.html');
+			$.ajax({
+		type:"get",
+		url:"../api/selectgdbid.php",
+		async:true,
+		data:{
+			'id':id
+		},
+		success:function(str){
+			var data=JSON.parse(str)
+			console.log(data);
+			for(var i=0;i<data.length;i++){
+				console.log(data[i].good_company);
+				//将该条内容信息插入到新表
+				$.ajax({
+				type:"get",
+				url:"../api/insertngd.php",
+				async:true,
+				data:{
+					'id':data[i].good_id,
+					'good_inf':data[i].good_inf,
+					'url':data[i].url,
+					'good_nums':data[i].good_nums,
+					'good_prices':data[i].good_prices,
+					'good_company':data[i].good_company
+				},
+				success:function(str){
+					console.log(str);
+				}
+			});
+			}
+			
+			
 		}
+		
+	});
+			}
+		
 		else{
 			alert('请选择相应商品');
 		}
 	})
-	
-	
-	
-	
 	
 	
 	

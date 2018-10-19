@@ -1,6 +1,6 @@
 $(function() {
 
-	//透明轮播
+	//透明轮播图
 	var div = $('.lbtrtc');
 	var lis = $('.lbtrtc ul li');
 	var btns = $('ol span');
@@ -47,20 +47,31 @@ $(function() {
 	div.onmouseout = function() {
 		timer = setInterval(next, 2000);
 	}
-
+	
+	//懒加载部分
 	var html = ``;
-	var html2 = ``;
-	$.ajax({
-		type: "get",
-		url: "../api/selectgoodls.php",
-		async: true,
-		success: function(str) {
-			var data = JSON.parse(str);
-			//			console.log(data);
-			for(var i = 0; i < data.length; i++) {
-				html += `<li class="fl">
+	$(window).scroll(function() { //开始监听滚动条
+		//获取当前滚动条高度
+		var topp = $(document).scrollTop();
+		//懒加载函数封装
+		function addPage(Htopp,pages){
+		if(topp ==Htopp &&pages<5) {
+				$.ajax({
+				type: "get",
+				url: "../api/pages.php",
+				async: true,
+				data: {
+					'page': pages,
+					'qty': 10
+				},
+				success: function(str) {
+					var data = JSON.parse(str);
+					var data = data.list;
+					console.log(data);
+					for(var i = 0; i < data.length; i++) {
+						html += `<li class="fl">
 						<p style="display: inline-block;width: 188px;">
-							<a href="goodInfo?id=${data[i].good_id}"><img src="../img/loading.gif" data-src="${data[i].url}"/></a>
+							<a href="goodInfo?id=${data[i].good_id}"><img src="${data[i].url}" data-src="${data[i].url}"/></a>
 						</p>
 
 						<div class="title"><a href="">${data[i].good_inf}</a></div>
@@ -74,31 +85,16 @@ $(function() {
 						</div>
 					</li>
 					`;
-			}
-			$('#goodsList').html(html);
-			var loadImages = lazyload();
-			loadImages(); //初始化首页的页面图片
-			window.addEventListener('scroll', loadImages, false);
-			var len = data.length;
-			var images = $('#goodsList img');
-
-			function lazyload() {
-				var n = 0; //存储图片加载到的位置，避免每次都从第一张图片开始遍历        
-				return function() {
-					var seeHeight = document.documentElement.clientHeight;
-					var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-					for(var i = n; i < len; i++) {
-						if(images[i].offsetTop < seeHeight + scrollTop) {
-							if(images[i].getAttribute('src') === '../img/loading.gif') {
-								images[i].src = images[i].getAttribute('data-src');
-							}
-							n = n + 1;
-						}
 					}
+					$('#goodsList').html(html);
 				}
-			}
+			});	
 		}
-	});
-
-	
+	}
+		//当滚动条达到相应位置的时候,加载相应的页数
+		addPage(100,1);
+		addPage(800,2);
+		addPage(1500,3);
+		addPage(2200,4);
+	})
 })

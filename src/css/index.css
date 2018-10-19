@@ -300,7 +300,8 @@ body {
 
 #nav ul .next_nav:hover {
   cursor: pointer;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  border-right: 10px solid #FFFFFF; }
   #nav ul .next_nav:hover #ssnz_list {
     display: block; }
   #nav ul .next_nav:hover h3 {

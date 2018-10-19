@@ -55,6 +55,33 @@
 .shoppertop {
   height: 40px;
   line-height: 40px;
+  position: relative;
+  font-size: 14px;
+  color: #666666;
+}
+.shoppertop .span2 {
+  position: absolute;
+  left: 220px;
+}
+.shoppertop .span3 {
+  position: absolute;
+  left: 550px;
+}
+.shoppertop .span4 {
+  position: absolute;
+  left: 900px;
+}
+.shoppertop .span5 {
+  position: absolute;
+  left: 1000px;
+}
+.shoppertop .span6 {
+  position: absolute;
+  left: 1100px;
+}
+.shoppertop .span7 {
+  position: absolute;
+  left: 1200px;
 }
 
 .gyshang {
@@ -64,8 +91,11 @@
 }
 
 .storBox {
+  position: relative;
   height: 157px;
   padding: 30px 0;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 30px;
 }
 .storBox .d1_w {
   position: relative;
@@ -107,9 +137,15 @@
   left: 400px;
 }
 .goodsize .good_l {
+  position: relative;
   width: 120px;
   height: 50px;
   border-right: 1px solid #DDDDDD;
+}
+.goodsize .good_l .styles {
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 .goodsize .good_r {
   position: relative;
@@ -117,6 +153,11 @@
   width: 206px;
   height: 50px;
   line-height: 50px;
+}
+.goodsize .good_r span {
+  position: absolute;
+  top: -1px;
+  left: 15px;
 }
 .goodsize .good_r a {
   display: inline-block;
@@ -129,18 +170,79 @@
 }
 .goodsize .good_r .add {
   position: absolute;
-  right: 35px;
-  top: 11px;
+  right: 48px;
+  top: 12px;
 }
 .goodsize .good_r .cut {
   position: absolute;
-  right: 117px;
-  top: 11px;
+  right: 129px;
+  top: 12px;
 }
 .goodsize .good_r input {
   width: 50px;
-  height: 30px;
-  box-shadow: 0 0 5px black;
+  height: 28px;
+  box-shadow: 0 0 1px black;
+}
+
+.box_right {
+  position: relative;
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 58px;
+  font-size: 14px;
+  color: #666666;
+}
+.box_right .box4 {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+.box_right .box3 {
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  color: #ff0c17;
+  font-weight: bold;
+}
+.box_right .box2 {
+  position: absolute;
+  right: 220px;
+  top: 18px;
+}
+.box_right .box1 {
+  position: absolute;
+  right: 272px;
+  top: 15px;
+}
+
+.calculate {
+  display: inline-block;
+  height: 70px;
+  width: 460px;
+  font-size: 14px;
+}
+.calculate a {
+  display: inline-block;
+  width: 167px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #f2323b;
+  color: #e8e4e4;
+  font-size: 22px;
+}
+
+.liulan {
+  height: 500px;
+  background: skyblue;
+}
+
+#delete {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
 }
 
 /*# sourceMappingURL=buycars.css.map */

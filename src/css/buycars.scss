@@ -56,15 +56,46 @@
 .shoppertop{
     height: 40px;
     line-height: 40px;
+    position: relative;
+    font-size: 14px;
+    color: #666666;
+   .span2{
+       position: absolute;
+       left: 220px;
+   }
+    .span3{
+       position: absolute;
+       left: 550px;
+   }
+    .span4{
+       position: absolute;
+       left: 900px;
+   }
+    .span5{
+       position: absolute;
+       left: 1000px;
+   }
+    .span6{
+       position: absolute;
+       left: 1100px;
+   }
+    .span7{
+       position: absolute;
+       left: 1200px;
+   }
 }
+
 .gyshang{
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid #DDDDDD;
 }
 .storBox{
+    position: relative;
     height: 157px;
     padding: 30px 0;
+    border-bottom:1px solid #DDDDDD ;
+    margin-bottom: 30px;
     .d1_w{
         position: relative;
         padding-left: 20px;
@@ -106,9 +137,15 @@
     left: 400px;
     
     .good_l{
+        position: relative;
         width: 120px;
         height: 50px;
         border-right: 1px solid #DDDDDD;
+        .styles{
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
     }
     .good_r{
         position: relative;
@@ -116,6 +153,11 @@
         width: 206px;
         height: 50px;
         line-height: 50px;
+        span{
+            position: absolute;
+            top: -1px;
+            left: 15px;
+        }
         a{
             display: inline-block;
             width: 30px;
@@ -127,20 +169,80 @@
         }
         .add{
             position: absolute;
-            right: 35px;
-            top: 11px;
+            right: 48px;
+            top: 12px;
             
         }
          .cut{
             position: absolute;
-            right: 117px;
-            top: 11px;
+            right: 129px;
+            top: 12px;
             
         }
         input{
             width: 50px;
-            height: 30px;
-            box-shadow: 0 0 5px black;
+            height: 28px;
+            box-shadow: 0 0 1px black;
         }
     }
+}
+.box_right{
+    position: relative;
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 58px; 
+    font-size: 14px;
+    color: #666666;
+   .box4{
+       position: absolute;
+       right: 20px;
+       top: 18px;
+   } 
+   .box3{
+       position: absolute;
+       right: 100px;
+       top: 18px;
+       color: #ff0c17;
+       font-weight: bold;
+   }
+   .box2{
+       position: absolute;
+       right: 220px;
+       top: 18px;
+   }   
+   .box1{
+       position: absolute;
+       right: 272px;
+       top: 15px;
+   } 
+   
+}
+.calculate{
+    display: inline-block;
+    height: 70px;
+    width: 460px;
+    font-size: 14px;
+    a{
+        display: inline-block;
+        width: 167px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        background:#f2323b;
+        color:#e8e4e4;
+        font-size: 22px;
+    }
+}
+.liulan{
+    height: 500px;
+    background: skyblue;
+}
+
+
+#delete{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
 }

@@ -271,6 +271,7 @@ body {
     ul {
         li {
             height: 35px;
+            
         }
     }
 }
@@ -448,6 +449,7 @@ body {
         .next_nav:hover {
             cursor: pointer;
             background: #FFFFFF;
+            border-right: 10px solid #FFFFFF;
             #ssnz_list{
                 display: block
             }

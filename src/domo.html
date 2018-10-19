@@ -3,8 +3,11 @@
 <meta charset="UTF-8">
 	<head>
 		<title>回到顶部</title>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript">
+			
+		</script>
 		<style type="text/css">
-			#btn {
+			/*#btn {
 				display: inline-block;
 				width: 60px;
 				height: 54px;
@@ -19,15 +22,47 @@
 			}
 			body{
 				height: 3000px;
+			}*/
+			#box{
+				height: 5000px;
+				width: 1000px;
+				background: skyblue;
 			}
 		</style>
 	</head>
 
 	<body>
-		<span id="btn"></span>
+		<!--<span id="btn"></span>-->
+		<div id="box">
+			
+		</div>
 	</body>
 
 </html>
-<script type="text/javascript" src="js/toTop.js">
+<!--<script type="text/javascript" src="js/toTop.js">-->
+	
+<!--</script>-->
+<script src="">
+	$(function(){
+		$(window).scroll(function(){//开始监听滚动条
+
+                //获取当前滚动条高度
+
+		var topp = $(document).scrollTop();
+
+                //用于调试 弹出当前滚动条高度
+
+		alert(topp);
+
+                //判断如果滚动条大于90则弹出 "ok"
+
+		if(topp > 90){
+
+			alert("ok");
+
+		}
+
+	})
+	})
 	
 </script>

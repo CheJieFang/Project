@@ -54,13 +54,18 @@ $('.reg_riginf .hd li').mousemove(function() {
 });
 
 //二级导航选项卡功能(未能实现)
-//$('.next_nav').mousemove(function(){
-//	$('.next_nav').attr('class','');
+//$('.nav_tab').on('mousemove','.next_nav',function(){
 //	console.log($(this));
-//	$(this).attr('class','actives');
-//	$('.nav_tab .two_tab').css('display','none');
-//	$('.nav_tab .two_tab').eq($(this).index()).css('display', 'block');
+//	console.log($(this).index());
 //})
+$('.nav_tab li').mousemove(function(){
+//	$('.next_nav').attr('class','');
+	console.log($(this));
+	console.log($(this).index());
+//	$(this).attr('class','actives');
+	$('.nav_tab .two_tab').css('display','none');
+	$('.nav_tab .two_tab').eq($(this).index()).css('display', 'block');
+})
 //ajax加载数据渲染F1
 $(function(){
 	var html=``;
@@ -98,7 +103,7 @@ $(function(){
 		success: function(str) {//成功的回调
 //				console.log(str);
 				var data = JSON.parse(str);
-				console.log(data);
+//				console.log(data);
 				for(var i=0;i<data.length;i++){
 					htmlb+=`<li class="fl">
 							<p style="display: inline-block;width: 188px;"><a href=""><img src="${data[i].url}"/></a></p>
