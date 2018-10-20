@@ -1,3 +1,69 @@
+#nav {
+    ul {
+        ul {
+            color: white;
+            height: 511px;
+            width: 238px;
+            background: #222222;
+        }
+    }
+}
+
+#nav {
+    ul {
+        .next_nav {
+            font-size: 13px;
+            border-bottom: 1px dashed #FFFFFF;
+          
+            /*tab1*/
+           .two_tab{
+                width: 728px;
+                height: 512px;
+                 border-left: 2px solid #b1191a;
+                border-right: 2px solid #b1191a;
+                border-bottom: 2px solid #b1191a;
+                background: #FFFFFF;
+                z-index: 1;
+                display: none;
+                 padding-left: 10px;
+                position: absolute;
+                top: 0px;
+                left: 238px;
+                
+           }
+          
+                
+            }
+           
+            
+        }
+          
+            
+    }
+
+
+#nav {
+    ul {
+        .next_nav:hover {
+//          z-index: -1;
+            cursor: pointer;
+            background: #FFFFFF;
+            #ssnz_list{
+                display: block;
+            }
+            h3 {
+                color: #c81623;
+            }
+            div {
+                color: #2d2d2d;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
@@ -185,13 +251,13 @@
     }
 }
 
-#kefu{
-    width:210px;
-    height:445px;
-    background: skyblue;
-    position: fixed;
-    right: -176px;
-    top: 100px;
-    background: url(../img/kefu.png);
-    
-}
+//#kefu{
+//  width:210px;
+//  height:445px;
+//  background: skyblue;
+//  position: fixed;
+//  right: -176px;
+//  top: 100px;
+//  background: url(../img/kefu.png);
+//  
+//}

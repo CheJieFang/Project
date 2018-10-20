@@ -1,16 +1,5 @@
 $(function() {
 
-	//点击时清除提示文字
-	//	$('#login_input').click(function() {
-	//		$('#login_input').attr('placeholder','');
-	//	})
-	//点击时清除提示文字
-	//	$('#login_psw').click(function() {
-	//		$('#login_psw').attr('placeholder','');
-	//	})
-	
-	
-	
 	//验证密码是否为空
 	$('#login_psw').blur(function() {
 			var login_psw = $('#login_psw').val();
@@ -59,6 +48,7 @@ $(function() {
 						if(login_psw == data[i].uspsw) {
 							alert('登陆成功');
 							location.href = "../index.html";
+							
 						} else {
 							$('.pwserror').css('display','inline-block');
 						}
