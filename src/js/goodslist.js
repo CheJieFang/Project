@@ -92,9 +92,25 @@ $(function() {
 		}
 	}
 		//当滚动条达到相应位置的时候,加载相应的页数
+//		if(topp>=100 && topp<800){addPage(1)};
+//		if(topp>=800 && topp<1500){addPage(2)};
+//		if(topp>=1500 && topp<2200){addPage(3)};
+//		if(topp>=2200){addPage(4)};
 		addPage(100,1);
 		addPage(800,2);
 		addPage(1500,3);
 		addPage(2200,4);
+	})
+	
+	
+	//侧边栏,animate()方法控制运动,开关思想控制进出
+	var key=true;
+	$('#kefu').on('click',function(){
+		if(key){
+			$('#kefu').animate({right:"0px"})
+		}else{
+			$('#kefu').animate({right:"-176px"})
+		}
+		key=!key;
 	})
 })

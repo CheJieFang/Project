@@ -295,21 +295,25 @@ body {
         .next_nav {
             font-size: 13px;
             border-bottom: 1px dashed #FFFFFF;
+          
             /*tab1*/
-            #ssnz_list{
-                padding-left: 10px;
+           .two_tab{
                 width: 728px;
-                height: 560px;
-                position: relative;
-                top: -53px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
+                height: 512px;
+                 border-left: 2px solid #b1191a;
                 border-right: 2px solid #b1191a;
                 border-bottom: 2px solid #b1191a;
                 background: #FFFFFF;
+                z-index: 1;
                 display: none;
-                ul{
+                 padding-left: 10px;
+                position: absolute;
+                top: 169px;
+                left: 283px;
+                
+           }
+          
+               #ssnz_list ul{
                     position: relative;
                     background: none;
                     height: 500px;
@@ -349,109 +353,19 @@ body {
             }
             
         }
-          /*tab2*/
-        #xbsp_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -116px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab3*/
-            #fqxx_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -242px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab4*/
-            #jpnz_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -179px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab5*/
-             #mrmz_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -305px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab6*/
-              #mytz_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -368px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab7*/
-            #xgny_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -431px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
-              /*tab8*/
-            #smdq_list{
-                width: 728px;
-                height: 560px;
-                position: relative;
-                top: -494px;
-                left: 229px;
-                z-index: 999;
-                border-left: 2px solid #b1191a;
-                border-right: 2px solid #b1191a;
-                border-bottom: 2px solid #b1191a;
-                display: none;
-            }
+          
             
     }
-}
+
 
 #nav {
     ul {
         .next_nav:hover {
+            z-index: -1;
             cursor: pointer;
             background: #FFFFFF;
-            border-right: 10px solid #FFFFFF;
             #ssnz_list{
-                display: block
+                display: block;
             }
             h3 {
                 color: #c81623;
@@ -780,12 +694,12 @@ body {
 #banner {
     #lunbo {
         .lbdiv {
-            display: inline-block;
+//          display: inline-block;
             width: 714px;
             height: 501px;
             margin-top: 10px;
             margin-right: 20px;
-            background: skyblue;
+//          z-index: -1;
         }
         .imgr1 {
             width: 175px;
@@ -802,7 +716,6 @@ body {
             right: 257px;
             height: 226px;
             width: 714px;
-            background: darkgray;
             p {
                 width: 529px;
                 height: 25px;
@@ -1214,4 +1127,16 @@ body {
 
 #to_top:hover {
     background: url(../img/to_tophover.png)no-repeat;
+}
+
+//客服侧边栏
+#kefu{
+    width:210px;
+    height:445px;
+    background: skyblue;
+    position: fixed;
+    right: -176px;
+    top: 100px;
+    background: url(../img/kefu.png);
+    
 }

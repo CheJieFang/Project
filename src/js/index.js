@@ -53,19 +53,18 @@ $('.reg_riginf .hd li').mousemove(function() {
 	$('.reg_riginf .bd ul').eq($(this).index()).css('display', 'block');
 });
 
-//二级导航选项卡功能(未能实现)
-//$('.nav_tab').on('mousemove','.next_nav',function(){
-//	console.log($(this));
-//	console.log($(this).index());
-//})
+//二级菜单选项卡效果
 $('.nav_tab li').mousemove(function(){
-//	$('.next_nav').attr('class','');
-	console.log($(this));
-	console.log($(this).index());
-//	$(this).attr('class','actives');
 	$('.nav_tab .two_tab').css('display','none');
 	$('.nav_tab .two_tab').eq($(this).index()).css('display', 'block');
+	
 })
+//鼠标离开时
+$('.nav_tab li').mouseout(function(){
+	$('.nav_tab .two_tab').eq($(this).index()).css('display', 'none');
+})
+
+
 //ajax加载数据渲染F1
 $(function(){
 	var html=``;
@@ -121,7 +120,14 @@ $(function(){
 				
 			}
 	});
-	
-	
-	
+	//侧边栏,animate()方法控制运动,开关思想控制进出
+	var key=true;
+	$('#kefu').on('click',function(){
+		if(key){
+			$('#kefu').animate({right:"0px"})
+		}else{
+			$('#kefu').animate({right:"-176px"})
+		}
+		key=!key;
+	})
 })
