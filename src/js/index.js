@@ -25,22 +25,22 @@ var s1 = new Slide(div1, 529, 267, [{
 
 var s2 = new Slide(div2, 529, 200, [{
 		"title": "标题1",
-		"img": "img/lb2_1",
+		"img": "img/lb2_1.jpg",
 		"url": ""
 	},
 	{
 		"title": "标题2",
-		"img": "img/lb2.jpg",
+		"img": "img/lb2_1.jpg",
 		"url": ""
 	},
 	{
 		"title": "标题3",
-		"img": "img/lb3.jpg",
+		"img": "img/lb2_1.jpg",
 		"url": ""
 	},
 	{
 		"title": "标题4",
-		"img": "img/lb4.jpg",
+		"img": "img/lb2_1.jpg",
 		"url": ""
 	}
 ], 10, 0, 3000, 1);
@@ -59,6 +59,8 @@ $('.reg_riginf .hd li').mousemove(function() {
 $('.nav_tab li').mousemove(function(){
 	$('.nav_tab .two_tab').css('display','none');
 	$('.nav_tab .two_tab').eq($(this).index()).css('display', 'block');
+//	$('.nav_tab .two_tab').eq($(this).index()).css('boeder-left', '2px solid #ffffff');
+	
 	
 })
 //鼠标离开时

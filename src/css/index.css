@@ -195,11 +195,12 @@ body {
 #nav ul .next_nav {
   font-size: 13px;
   border-bottom: 1px dashed #FFFFFF;
+  border-right: 2px solid #b1191a;
   /*tab1*/
 }
 #nav ul .next_nav .two_tab {
   width: 728px;
-  height: 512px;
+  height: 510px;
   border-left: 2px solid #b1191a;
   border-right: 2px solid #b1191a;
   border-bottom: 2px solid #b1191a;
@@ -208,8 +209,8 @@ body {
   display: none;
   padding-left: 10px;
   position: absolute;
-  top: 169px;
-  left: 303px;
+  top: 172px;
+  left: 284px;
 }
 #nav ul .next_nav #ssnz_list ul {
   position: relative;
@@ -251,11 +252,39 @@ body {
 #nav ul .next_nav:hover {
   cursor: pointer;
   background: #FFFFFF;
-  border-right: 5px solid red;
+  border-right: 5px solid #FFFFFF;
 }
-#nav ul .next_nav:hover b
-#ssnz_list {
+#nav ul .next_nav:hover #ssnz_list {
   display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #xbsp_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #fqxx_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #jpnz_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #mrmz_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #mytz_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #xgny_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
+}
+#nav ul .next_nav:hover #smdq_list {
+  display: block;
+  border-left: 2px solid #FFFFFF;
 }
 #nav ul .next_nav:hover h3 {
   color: #c81623;

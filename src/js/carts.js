@@ -7,7 +7,7 @@ $(function() {
 		async: true,
 		success: function(str) {
 			var data = JSON.parse(str);
-			console.log(data);
+//			console.log(data);
 			for(var i = 0; i < data.length; i++) {
 				html += `
 				<div class="listBox">
@@ -46,7 +46,7 @@ $(function() {
 		<div class="container" style="height: 70px;">
 			<div class="calculate fr">
 				<span>已进货商品<span class="zonum">1</span> 件</span>
-				<span style="color:#ff0c17">合计（不含运费）：￥<span class="total">${data[i].good_prices}</span></span>
+				<span style="color:#ff0c17">合计（不含运费）：￥<span class="total hejis">${data[i].good_prices}</span></span>
 				<a href="">结算</a>
 			</div>
 		</div>
@@ -62,6 +62,7 @@ $(function() {
 				$(this).parent().parent().parent().remove();
 			})
 			//			isCheked();
+			
 			//判断复选框是否被选中
 			function isCheked() {
 				var arr = [];
@@ -78,18 +79,20 @@ $(function() {
 				return arr;
 				//				console.log(arr);
 			}
-
+	
 			var keys = true;
 			//全选和取消全选
 			$("#allchecked").on('click', function() {
 				if(keys) {
 					$("#allchecked").prop("checked", "checked");
 					$('.d1_w>input').prop('checked', "checked");
+					$('#zongji').css('display','block');
+					zongji();
 
 				} else {
 					$("#allchecked").removeAttr('checked');
 					$('.d1_w>input').removeAttr('checked');
-
+					$('#zongji').css('display','none');
 				}
 				keys = !keys;
 				//判断复选框是否被选中
@@ -101,14 +104,17 @@ $(function() {
 
 			$('#carslist').on('click', '.cheb', function() {
 				var arr = isCheked();
-				console.log($('.cheb').size());
+//				console.log($('.cheb').size());
 				if(arr.length == $('.cheb').size()) {
 					//都被选中了
 					$('#allchecked').prop('checked', 'checked');
 					//三个都被选中了，下次点击全选按钮是为了全不选
+					$('#zongji').css('display','block');
+					zongji();
 					keys = false;
 				} else {
 					$('#allchecked').removeAttr('checked');
+					$('#zongji').css('display','none');
 					//证明没有选中全部
 					keys = true;
 
@@ -145,6 +151,7 @@ $(function() {
 		$(this).prev().val(num);
 		//小计
 		price($(this));
+		
 	})
 
 	//点击减少
@@ -165,17 +172,51 @@ $(function() {
 	function price(now) {
 		//拿到添加的数量
 		var good_Number = now.parent().find('input').val();
-		console.log(good_Number);
+//		console.log(good_Number);
 		//拿到单价
 		var good_price = now.parent().parent().parent().next().find('.box3 span').text();
 		//		good_price=parseFloat(good_price);
-		console.log(good_price);
+//		console.log(good_price);
 		var total = good_Number * good_price;
 		total = total.toFixed(2);
 		now.parent().parent().parent().next().find('.box2').html(good_Number);
 		now.parent().parent().parent().parent().next().find('.calculate .zonum').text(good_Number);
 		now.parent().parent().parent().parent().next().find('.calculate .total').text(total);
 
+	}
+	
+	//总结算封装
+	
+	function zongji(){
+		var total=0;
+		var arr=[];
+		var numbers=$('#carslist').find('.zonum').text();
+		var zongjias=document.getElementsByClassName('hejis');
+		for(var i=0;i<numbers.length;i++){
+			total+=parseInt(numbers[i]*1);
+		}
+		for(var i=0;i<zongjias.length;i++){
+			arr.push((zongjias[i].innerText)*1);
+		}
+		var zongjias=sum(arr).toFixed(2);
+		function sum(arr){
+			return eval(arr.join('+'));
+		}
+			console.log(total);
+			console.log(zongjias);
+//			if(keys){
+				var allNums=$('#zongji .allNums').text(total);
+				var allNums=$('#zongji .allPri').text(zongjias);
+//			}else{
+//				function guiling(){
+//				var allNums=$('#zongji .allNums').text(0);
+//				var allNums=$('#zongji .allPri').text(0.00);
+//				}
+				
+//			}
+			
+			console.log(allNums);
+		
 	}
 
 })

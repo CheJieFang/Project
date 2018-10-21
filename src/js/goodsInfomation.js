@@ -219,7 +219,17 @@ $(function(){
 	})
 	
 	
-	
+	//侧边栏,animate()方法控制运动,开关思想控制进出
+	var open=true;
+	console.log($('#kefu'));
+	$('#kefu').click(function(){
+		if(open){
+			$('#kefu').animate({right:"0px"})
+		}else{
+			$('#kefu').animate({right:"-176px"})
+		}
+		open=!open;
+	});
 	
 	
 	

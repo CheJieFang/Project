@@ -27,12 +27,14 @@ $(function() {
 	//1.用户验证
 	$('#reg_name').blur(function() {
 		var reg_value = $('#reg_name').val();
+		console.log(reg_value);
 		if(reg_value == '') {
 			$('.reg_namer').css('display', 'none');
 			$('.reg_namew').css('display', 'inline-block');
 			$('.reg_namez').css('display', 'none');
 		}
 		var key = reg_value.match(/(^1[35789]\d{9}$)|(^\w+@\w+(\.\w+)+$)/);
+		console.log(key);
 		$.ajax({
 			type: "get",
 			url: "../api/selectusers.php",
@@ -50,13 +52,13 @@ $(function() {
 						$('.reg_namer').css('display', 'none');
 						$('.reg_namew').css('display', 'none');
 						$('.reg_namez').css('display', 'inline-block');
-					}else if(brr.indexOf(reg_value)==-1 &&reg_value!=''){
+					}else if(brr.indexOf(reg_value)==-1 &&reg_value!='' &&key!=null){
 						//验证通过
 						$('.reg_namer').css('display', 'inline-block');
 						$('.reg_namew').css('display', 'none');
 						$('.reg_namez').css('display', 'none');
 						arr[0] = true;
-					}else{
+					}else if(key==null){
 						//非法用户名
 						$('.reg_namer').css('display', 'none');
 						$('.reg_namew').css('display', 'inline-block');

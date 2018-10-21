@@ -380,7 +380,44 @@ div.zoomDiv {
 
 div.zoomMask {
     position: absolute;
-    background: url(../images/imgs/mask.png) repeat scroll 0 0 transparent;
+    background: url(../img/mask.png) repeat scroll 0 0 transparent;
     cursor: move;
     z-index: 1;
+}
+#xiangqing{
+    width: 998px;
+    height: 3780px;
+    ul {
+        height: 40px;
+        width: 998px;
+        border: 1px solid #DDDDDD;
+        li{
+        height: 40px;
+        border-right: 1px solid #DDDDDD;
+        padding: 10px;
+        
+    }
+    }
+     ol {
+         padding-left: 20px;
+        height: 40px;
+        width: 998px;
+        line-height: 40px;
+        font-size: 12px;
+        color: #666666;
+        border: 1px solid #DDDDDD;
+        span{
+            margin-right: 150px;
+        }
+    }
+}
+#kefu{
+    width:210px;
+    height:445px;
+    background: skyblue;
+    position: fixed;
+    right: -176px;
+    top: 100px;
+    background: url(../img/kefu.png);
+    
 }

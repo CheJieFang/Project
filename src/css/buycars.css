@@ -236,13 +236,41 @@
 
 .liulan {
   height: 500px;
-  background: skyblue;
+  padding: 44px;
+}
+.liulan ul {
+  width: 1150px;
+  height: 300px;
+}
+.liulan ul li img {
+  width: 270px;
+  height: 270px;
+  margin-right: 15px;
 }
 
 #delete {
   position: absolute;
   bottom: 0;
   left: 100px;
+}
+
+#zongji {
+  height: 70px;
+  width: 500px;
+  background: navajowhite;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+#liulan {
+  margin-top: 20px;
+  padding-left: 20px;
+  height: 50px;
+  width: 1220px;
+  line-height: 50px;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 /*# sourceMappingURL=buycars.css.map */
