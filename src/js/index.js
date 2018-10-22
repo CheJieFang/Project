@@ -128,9 +128,9 @@ $(function(){
 	var key=true;
 	$('#kefu').on('click',function(){
 		if(key){
-			$('#kefu').animate({right:"0px"})
+			$('#kefu').animate({right:"0px"});
 		}else{
-			$('#kefu').animate({right:"-176px"})
+			$('#kefu').animate({right:"-176px"});
 		}
 		key=!key;
 	})
