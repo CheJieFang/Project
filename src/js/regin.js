@@ -5,9 +5,9 @@ $(function() {
 		code = "";
 		var codeLength = 4; //验证码的长度
 		var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
-			'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'); //所有候选组成验证码的字符，当然也可以用中文的
+			'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'); //所有候选组成验证码的字符，当然也可以用中文的
 		for(var i = 0; i < codeLength; i++) {
-			var charIndex = Math.floor(Math.random() * 36);
+			var charIndex = Math.floor(Math.random() * 48);
 			code += selectChar[charIndex];
 		}
 		// 设置验证码的显示样式，并显示

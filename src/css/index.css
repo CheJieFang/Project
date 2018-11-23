@@ -128,7 +128,6 @@ body {
 #div ul li {
   padding: 0 5px 0;
   font-size: 12px;
-  font-family: "瀹嬩綋";
   color: #484848;
 }
 
@@ -210,7 +209,7 @@ body {
   padding-left: 10px;
   position: absolute;
   top: 169px;
-  left: 283px;
+  left: 303px;
 }
 #nav ul .next_nav #ssnz_list ul {
   position: relative;
@@ -250,11 +249,12 @@ body {
 }
 
 #nav ul .next_nav:hover {
-  z-index: -1;
   cursor: pointer;
   background: #FFFFFF;
+  border-right: 5px solid red;
 }
-#nav ul .next_nav:hover #ssnz_list {
+#nav ul .next_nav:hover b
+#ssnz_list {
   display: block;
 }
 #nav ul .next_nav:hover h3 {

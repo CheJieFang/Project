@@ -1,5 +1,15 @@
 $(function() {
-
+	
+	window.scrollTo=0;//页面刷新时滚动到顶部
+	
+	$('#li').on('mousemove',function(){
+		$(this).find('.nav_tab').css('display','block');
+	})
+	$('#li').on('mouseout',function(){
+		$(this).find('.nav_tab').css('display','none');
+	})
+	
+	
 	//透明轮播图
 	var div = $('.lbtrtc');
 	var lis = $('.lbtrtc ul li');
@@ -50,12 +60,15 @@ $(function() {
 	
 	//懒加载部分
 	var html = ``;
+	//获取当前滚动条高度
+	var topp = $(document).scrollTop();
+	//当前页面的高度
+	var winH = $(window).height();
+	var docH=$(document).height();
+	var pages=0;
 	$(window).scroll(function() { //开始监听滚动条
-		//获取当前滚动条高度
-		var topp = $(document).scrollTop();
-		//懒加载函数封装
-		function addPage(Htopp,pages){
-		if(topp ==Htopp &&pages<5) {
+		if(topp+docH>=docH){
+			pages++;
 				$.ajax({
 				type: "get",
 				url: "../api/pages.php",
@@ -66,6 +79,7 @@ $(function() {
 				},
 				success: function(str) {
 					var data = JSON.parse(str);
+					if(data==''){console.log(true)}
 					var data = data.list;
 					console.log(data);
 					for(var i = 0; i < data.length; i++) {
@@ -90,16 +104,7 @@ $(function() {
 				}
 			});	
 		}
-	}
-		//当滚动条达到相应位置的时候,加载相应的页数
-//		if(topp>=100 && topp<800){addPage(1)};
-//		if(topp>=800 && topp<1500){addPage(2)};
-//		if(topp>=1500 && topp<2200){addPage(3)};
-//		if(topp>=2200){addPage(4)};
-		addPage(100,1);
-		addPage(800,2);
-		addPage(1500,3);
-		addPage(2200,4);
+		
 	})
 	
 	

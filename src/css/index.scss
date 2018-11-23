@@ -186,7 +186,6 @@ body {
         li {
             padding: 0 5px 0;
             font-size: 12px;
-            font-family: "瀹嬩綋";
             color: #484848;
         }
     }
@@ -292,10 +291,10 @@ body {
 
 #nav {
     ul {
+     
         .next_nav {
             font-size: 13px;
             border-bottom: 1px dashed #FFFFFF;
-          
             /*tab1*/
            .two_tab{
                 width: 728px;
@@ -309,7 +308,7 @@ body {
                  padding-left: 10px;
                 position: absolute;
                 top: 169px;
-                left: 283px;
+                left: 303px;
                 
            }
           
@@ -361,9 +360,10 @@ body {
 #nav {
     ul {
         .next_nav:hover {
-            z-index: -1;
             cursor: pointer;
             background: #FFFFFF;
+            border-right:5px solid red;
+            b
             #ssnz_list{
                 display: block;
             }
